@@ -1,0 +1,41 @@
+body {
+
+    width: 1000px;
+    height: 600px;
+    margin: auto;
+}
+
+
+.row {
+    width: 1000px;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: auto;
+    padding: 10px;
+}
+
+.column {
+    width: 200px;
+    height: 500px;
+    border: 1px solid black;
+    float: left;
+    margin: 20px;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+.orange {
+    background-color: orange;
+}
+
+.lightgreen {
+    background-color: lightgreen;
+}
+
+.blue {
+    background-color: aqua;
+}
