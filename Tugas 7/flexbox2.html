@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            /* border: 5px solid black; */
+            display: flex;
+            justify-content: center;
+            /* width: 100%;
+            padding: 5px; */
+            /* max-height: 100vh; */
+            /* flex-direction: column; */
+            margin: 0;
+        }
+
+        #container {
+            padding: 5px;
+            /* border: 5px solid black; */
+            max-width: 50%;
+            display: flex;
+            flex: 1;
+            /* justify-content: space-around; */
+        }
+
+        #main {
+            /* border: 5px solid black; */
+            /* width: 50px; */
+            /* flex-wrap: wrap; */
+            display: flex;
+            /* flex: 1; */
+            flex-direction: column;
+            /* padding: 5px; */
+            /* margin: 5px; */
+        }
+
+        #two {
+            /* height: 40vh; */
+            display: flex;
+            width: 375%;
+            /* flex-wrap: wrap; */
+            /* flex: 1; */
+            /* flex-direction: column; */
+        }
+
+        #main>header {
+            /* order: 0; */
+            /* flex: 0 0 10vw; */
+            background-color: khaki;
+            width: 375%;
+            height: 10vh;
+        }
+
+        #two>article {
+            width: 300%;
+            height: 40vh;
+            /* flex: 0 0 30vw; */
+            order: 0;
+        }
+
+        #container>nav {
+            flex: 0 0 10vw;
+            background-color: palevioletred;
+            order: -1;
+        }
+
+        #two>aside {
+            width: 75%;
+            height: 40vh;
+            background-color: aqua;
+            order: 0;
+            /* flex: 0 0 10vw; */
+        }
+
+        footer {
+            background-color: khaki;
+            width: 375%;
+            height: 10vh;
+        }
+
+        header,
+        footer,
+        article,
+        nav,
+        aside {
+            padding: 1em;
+        }
+
+        /* #main>nav {
+            flex: 2;
+            background-color: palevioletred;
+            width: 130px;
+            height: 400px;
+        }
+
+        #main>footer,
+        #main>header {
+            background-color: khaki;
+            width: 500px;
+            height: 100px;
+        }
+
+        #main>article {
+            background-color: lightgreen;
+            width: 300px;
+            height: 200px;
+        }
+
+        #main>aside {
+            width: 200px;
+            height: 200px;
+            background-color: aqua;
+        } */
+
+        /* #main>article {
+            flex: 1;
+            order: 1;
+        }
+
+        #main>aside {
+            flex: 0 0 20vw;
+        }
+
+        nav {
+            background: #03DAC5;
+            order: 3;
+            height: 50vh;
+            width: 20vh;
+            justify-content: flex-start;
+        }
+
+        #main>aside {
+            background: pink;
+            order: 2;
+        }
+
+        header,
+        footer {
+            background: khaki;
+            height: 20vh;
+        }
+
+        header,
+        footer,
+        article,
+        nav,
+        aside {
+            padding: 1em;
+        } */
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <nav>Nav</nav>
+        <div id="main">
+            <header>Header</header>
+            <div id="two">
+                <article>Article</article>
+                <aside>Aside</aside>
+            </div>
+            <footer>Footer</footer>
+        </div>
+    </div>
+</body>
+
+</html>
