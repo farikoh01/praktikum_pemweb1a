@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Menghitung Kurs Rupiah</title>
+    <script>
+        function hitungNilai() {
+            let dollar = document.getElementById("dollar").value;
+            const NILAI_RUPIAH = 14650;
+            // let rupiah = document.getElementById("rupiah").value;
+            let rupiah = dollar * NILAI_RUPIAH;
+            console.log("rupiah")
+            let area_hasil = document.getElementById("hasil");
+            area_hasil.innerHTML = rupiah;
+            // let nf = new Intl.NumberFormat('id-ID');
+            // hasil.value = "Rp. " + nf.format(area_hasil);
+        }
+
+    </script>
+</head>
+
+<body>
+    <fieldset>
+        <legend>Menghitung Kurs Rupiah</legend>
+        <input type="number" name="" id="dollar" placeholder="Dollar">
+        <br />
+        <button button onclick="hitungNilai()">Nilai Rupiah</button> : <span id="hasil"></span>
+        <!-- <input type="text" name="" id="rupiah" placeholder="Nilai Rupiah"> -->
+    </fieldset>
+</body>
+
+</html>
