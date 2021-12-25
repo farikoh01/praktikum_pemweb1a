@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplikasi Chat</title>
+    <script>
+        function kirim() {
+            let pesan = document.getElementById("pesan");
+            // let kirim_pesan = document.getElementById("masuk");
+            let hasil = document.getElementsById("hasil");
+            let penampungPesan
+            // let text = document.getElementById("text").value;
+
+            function tampil() {
+                if (pesan.value == "") {
+                    pesan = penampungPesan
+                } else {
+                    hasil.innerHTML += nama.value + "<br />"
+                }
+            }
+        }
+    </script>
+    <style>
+        /* .body {
+            justify-content: center;
+        } */
+
+        .box {
+            border: 1px solid black;
+            width: 17%;
+            height: 300px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <form class="box">
+        <div>
+            <input type="text" placeholder="Kirim Pesan">
+            <input type="submit" name="Kirim" id="" value="Kirim" onchange="tampil">
+        </div>
+    </form> -->
+
+
+    <!-- <fieldset style="width: 100%;" class="jarak">
+        <input type="text" placeholder="Kirim Pesan">
+        <input type="submit" name="Kirim" id="" value="Kirim">
+    </fieldset> -->
+    <form>
+        <textarea name="" id="" cols="30" rows="10"></textarea>
+        <br>
+        <input type="text" placeholder="Kirim Pesan">
+        <input type="submit" name="Kirim" id="" value="Kirim" onchange="tampil">
+    </form>
+</body>
+
+</html>
