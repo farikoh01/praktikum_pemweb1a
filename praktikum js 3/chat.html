@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Message</title>
+    <style>
+        body {
+            width: 500px;
+            min-height: 430px;
+            border: 2px solid black;
+            margin: 30%;
+            box-sizing: border-box;
+            position: relative;
+            background-color: gray;
+        }
+
+        /* #hasil {
+            width: 500px;
+            min-height: 500px;
+            border: 1px solid black;
+            margin: auto;
+            box-sizing: border-box;
+            position: relative;
+
+        } */
+
+        .img {
+            float: inherit;
+        }
+
+        #pesan {
+            position: absolute;
+            bottom: 0;
+            width: 470px;
+        }
+
+        button {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- <img src="bg.png" alt=""> -->
+    <div id="box">
+        <h2 id="hasil"></h2>
+        <input type="text" id="pesan" placeholder="Masukkan Pesan">
+        <button onclick="kirim_pesan()">Kirim</button>
+    </div>
+
+    <script>
+        let masukan = document.getElementById("pesan")
+        let hasil = document.getElementById("hasil")
+        let penampung = ""
+
+        function kirim_pesan() {
+            penampung += masukan.value + "<br>"
+            hasil.innerHTML = penampung
+            masukan.value = ""
+        }
+    </script>
+</body>
+
+</html>

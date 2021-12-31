@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Authentication</title>
+    <style>
+        body {
+            background-color: #fff;
+            color: #333;
+            font-family: Arial;
+        }
+
+        #box {
+            position: fixed;
+            left: 30%;
+            border-radius: 8px;
+            background-color: #fff;
+            width: 300px;
+            margin: 15px auto;
+            padding: 20px 40px;
+            display: block;
+            border: 1px solid #ddd;
+            box-shadow: 2px 2px 20px #ddd;
+        }
+
+        body input {
+            padding: 10px;
+            border-radius: 5px;
+            margin: 10px 0;
+            width: 95%;
+            border: 1px solid #ddd;
+        }
+
+        button {
+            background: #07acec;
+            color: #fff;
+            font-weight: bold;
+            padding: 10px;
+            border-radius: 5px;
+            border: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="box">
+        <form action="#login">
+            <input type="text" id="username" placeholder="username">
+            <br>
+            <input type="text" id="password" placeholder="Pessword">
+            <br>
+            <button onclick="login()">Kirim</button>
+        </form>
+    </div>
+
+    <script>
+        function login() {
+            var masukan = document.getElementById("username").value + document.getElementById("password").value;
+            var code = ("ahmad2017") + ("integrity");
+            if (masukan == code) {
+                alert("Login Sukses")
+                window.open("konfirlogin.html")
+            } else {
+                window.alert("Login Gagal")
+            }
+        }
+    </script>
+</body>
+
+
+</html>
+
+
+<!-- <form>
+    <span>Email</span>
+    <br>
+    <input type="text" id="user" placeholder="Masukkan Username Anda">
+    <br>
+    <span>Password</span>
+    <br>
+    <input type="text" id="password" placeholder="Masukkan Pesssword">
+    <br>
+    <button onclick="login()">Kirim</button>
+</form>
+
+<script>
+    // let masukan = document.getElementById("user")
+    // let password = document.getElementById("password")
+    // let penampung = ""
+    let username = document.getElementById("user")
+    let password = document.getElementById("password")
+    let penampung
+
+    function login() {
+        if (username == "_km01" && password == "swiss") {
+            penampung = window.alert("Login Sukses")
+        } else {
+            window.alert("Login Gagal")
+        }
+    }
+</script> -->
+
+<!-- <script>
+    let masukan = document.getElementById("user_name")
+    let password = document.getElementById("password")
+    let penampung = ""
+
+    function validasi() {
+        if (user_name.value == "_km01") {
+        } else {
+            window.alert('Username Salah')
+        }
+
+        if (password.value == "010101") {
+
+        } else {
+            window.alert('Password Salah')
+        }
+    }
+</script> -->
+
+<!-- <form>
+    <div>Username : _km01</div>
+    <div>Password : 010101</div>
+</form>
+<input type="text" id="user_name" placeholder="Masukkan Username Anda" onclick="validasi()">
+<br>
+<input type="number" id="password" placeholder="Masukkan Password Anda">
+<br>
+<button onclick="validasi()">Login</button> -->
+
+<!-- if (input == "_km01") {
+    let input2 = prompt("Ada Yang Ingin Ditanyakan?")
+    if (input2 == "Siapa Jaehyun?", "Siapa Jaemin?") {
+        window.alert("Dia Jodohmu")
+    } else {
+        window.alert("Sorry")
+    }
+} -->

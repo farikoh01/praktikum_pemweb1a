@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: gray;
+        }
+    </style>
+</head>
+
+<body>
+    <select name="" id="kpop" onchange="berubah()">
+        <option value="">-- SM Entertaiment --</option>
+        <option value="boa">BOA</option>
+        <option value="suju">Super Junior</option>
+        <option value="snsd">Girls' Generation</option>
+        <option value="shinee">Shinee</option>
+        <option value="exo">EXO</option>
+        <option value="rv">Red Valvet</option>
+        <option value="nct">NCT</option>
+        <option value="nct127">NCT 127</option>
+        <option value="nctd">NCT Dream</option>
+        <option value="wayv">WayV</option>
+        <option value="aespa">aespa</option>
+    </select>
+    <br>
+
+    <div style="display: flex; justify-content: center; width: 100%;" id="tempat_gambar">
+        <!-- <img src="" alt=""> -->
+    </div>
+    <script>
+        let sm = document.getElementById("kpop")
+        let tempat_gambar = document.getElementById("tempat_gambar")
+
+        function berubah() {
+            switch (kpop.value) {
+                case "boa": tempat_gambar.innerHTML = '<img src="boa.png" alt="">'
+                    break;
+                case "suju": tempat_gambar.innerHTML = '<img src="suju.png" alt="">'
+                    break;
+                case "snsd": tempat_gambar.innerHTML = '<img src="snsd.png" alt="">'
+                    break;
+                case "shinee": tempat_gambar.innerHTML = '<img src="shinee.png" alt="">'
+                    break;
+                case "exo": tempat_gambar.innerHTML = '<img src="exo.png" alt="">'
+                    break;
+                case "rv": tempat_gambar.innerHTML = '<img src="rv.png" alt="">'
+                    break;
+                case "nct": tempat_gambar.innerHTML = '<img src="nct.png" alt="">'
+                    break;
+                case "nct127": tempat_gambar.innerHTML = '<img src="nct127.png" alt="">'
+                    break;
+                case "nctd": tempat_gambar.innerHTML = '<img src="nctd.png" alt="">'
+                    break;
+                case "wayv": tempat_gambar.innerHTML = '<img src="wayv.png" alt="">'
+                    break;
+                case "aespa": tempat_gambar.innerHTML = '<img src="aespa.png" alt="">'
+                    break;
+
+                default:
+                    break;
+            }
+            // switch (hewan.value) {
+            //     case "bekantan": tempat_gambar.innerHTML = '<img src="nct.png" alt="">' break;
+            //     case "orang_utan": tempat_gambar.innerHTML = '<img src="aespa.png" alt="">' break;
+            //     default = break;
+            // }
+        }
+    </script>
+</body>
+
+</html>

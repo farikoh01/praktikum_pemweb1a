@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <style>
+        span {
+            visibility: hidden;
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <input type="text" id="nama" placeholder="Masukkan Nama Anda">
+    <span>Nama Tidak Sesuai Kriteria!</span>
+    <br>
+    <input type="email" id="email" placeholder="Masukkan Email Anda">
+    <span>Data Nama Tidak Valid!</span>
+    <br>
+    <input type="time" id="jam">
+    <span>Jam Keberangkatan Tidak Boleh Kosong!</span>
+    <br>
+    <input type="text" id="tujuan" placeholder="Masukkan Tujuan Anda">
+    <span>Tujuan Keberangkatan Tidak Boleh Kosong!</span>
+    <br>
+    <input type="number" id="jumlah" placeholder="Masukkan Jumlah Tiket">
+    <span>Pembelian Telah Mencapai Batas Maksimum!</span>
+    <br>
+    <button onclick="validasi()">Submit</button>
+    <div id="hasil"></div>
+
+    <script>
+        let nama = document.getElementById("nama")
+        let email = document.getElementById("email")
+        let jam = document.getElementById("jam")
+        let tujuan = document.getElementById("tujuan")
+        let jumlah = document.getElementById("jumlah")
+        let span = document.getElementsByTagName("span")
+        let hasil = document.getElementById("hasil")
+
+
+        function validasi() {
+            if (nama.value == "" || nama.value.length >= 30) {
+                span[0].style.visibility = "visible"
+            } else {
+                hasil.innerHTML += nama.value + "<br>"
+            }
+
+            if (email.value == "") {
+                span[1].style.visibility = "visible"
+            } else {
+                hasil.innerHTML += email.value + "<br>"
+            }
+
+            if (jam.value == "") {
+                span[2].style.visibility = "visible"
+            } else {
+                hasil.innerHTML += jam.value + "<br>"
+            }
+
+            if (tujuan.value == "") {
+                span[3].style.visibility = "visible"
+            } else {
+                hasil.innerHTML += tujuan.value + "<br>"
+            }
+
+            if (jumlah.value == "" || jumlah.value.length >= 10) {
+                span[4].style.visibility = "visible"
+            } else {
+                hasil.innerHTML += jumlah.value + "<br>"
+            }
+        }
+    </script>
+</body>
+
+</html>
